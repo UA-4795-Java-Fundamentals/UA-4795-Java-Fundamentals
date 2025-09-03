@@ -121,5 +121,8 @@ This project uses JUnit 5 for testing. To run the tests:
 ---
 > **Note**: All the commands above can be run directly from the terminal in your IDE (IntelliJ IDEA or Eclipse) for convenience. ✨
 
-![Terminal in IDE](img.png)
+![img.png](img.png)![Terminal in IDE](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 *Screenshot showing the terminal in IntelliJ IDEA*
