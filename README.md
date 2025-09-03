@@ -4,7 +4,7 @@
 [![Maven](https://img.shields.io/badge/Maven-3.9.5-blue.svg)](https://maven.apache.org/)
 [![JUnit](https://img.shields.io/badge/JUnit-5.11.4-green.svg)](https://junit.org/junit5/)
 
-This is the repository for the **UA-4724-Java-Fundamentals** group, created for completing homework and practical tasks for the "Java Fundamentals" course. The course is designed to teach basic Java programming concepts that are essential for further development in the field of software engineering.
+This is the repository for the **UA-4795-Java-Fundamentals** group, created for completing homework and practical tasks for the "Java Fundamentals" course. The course is designed to teach basic Java programming concepts that are essential for further development in the field of software engineering.
 
 ## Table of Contents
 - [Course Overview](#course-overview)
