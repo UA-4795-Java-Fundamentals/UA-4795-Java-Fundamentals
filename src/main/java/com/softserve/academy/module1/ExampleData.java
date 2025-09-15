@@ -1,5 +1,7 @@
 package com.softserve.academy.module1;
 
+//import com.softserve.academy.module3.Student;
+
 public class ExampleData {
     public static void main(String[] args) {
         int number = 10;
@@ -23,6 +25,9 @@ public class ExampleData {
         System.out.println("Byte: " + byteNumber);
         System.out.println("Short: " + shortNumber);
         System.out.println("Object: " + expample);
+
+       // Student st1 = new Student();
+
 
     }
 }
