@@ -12,5 +12,6 @@ public class UserInfo {
         System.out.println("Where do you live, " + name + "?");
         String address = scanner.nextLine();
         System.out.println("Name: " + name + ", Address: " + address);
+        scanner.close();
     }
 }
