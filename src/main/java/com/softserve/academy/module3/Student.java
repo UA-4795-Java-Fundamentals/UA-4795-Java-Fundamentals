@@ -53,7 +53,11 @@ public class Student {
 
     @Override
     public String toString() {
-        return "2";
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 
     public String getLastName() {
