@@ -6,11 +6,11 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Input the first number: ");
-        int a = input.nextInt();
+        double a = input.nextDouble();
         System.out.print("Input the second number: ");
-        int b = input.nextInt();
+        double b = input.nextDouble();
         System.out.print("Input the third number: ");
-        int c = input.nextInt();
+        double c = input.nextDouble();
 
         if (checkRange(a, b, c)) {
             System.out.println("All three numbers are within the range");
@@ -20,7 +20,7 @@ public class Task1 {
         }
     }
 
-    public static boolean checkRange(int a, int b, int c) {
+    public static boolean checkRange(double a, double b, double c) {
         if (a > 5 || a < -5) return false;
         if (b > 5 || b < -5) return false;
         return c <= 5 && c >= -5;
