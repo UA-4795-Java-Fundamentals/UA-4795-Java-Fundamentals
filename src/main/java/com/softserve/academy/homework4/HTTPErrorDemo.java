@@ -1,4 +1,4 @@
-package com.softserve.homework4;
+package com.softserve.academy.homework4;
 
 import java.util.Scanner;
 
