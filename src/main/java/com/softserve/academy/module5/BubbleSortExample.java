@@ -19,6 +19,11 @@ public class BubbleSortExample {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                    System.out.print("Iteration " + (i + 1) + "." + (j + 1) + ": ");
+                    for (int num : arr) {
+                        System.out.print(num + " ");
+                    }
+                    System.out.println();
                 }
             }
         }

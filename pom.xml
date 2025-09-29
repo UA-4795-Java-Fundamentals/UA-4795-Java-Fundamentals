@@ -14,19 +14,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <junit.jupiter.version>5.12.2</junit.jupiter.version>
+        <junit.jupiter.version>5.13.4</junit.jupiter.version>
         <lombok.version>1.18.38</lombok.version>
         <maven.compiler.release>21</maven.compiler.release>
 
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.12.2</version>
+            <version>5.13.4</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

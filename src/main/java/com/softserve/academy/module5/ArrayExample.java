@@ -28,6 +28,8 @@ public class ArrayExample {
         students[2] = new Student("Jennie", "Jack",25);
         System.out.println(Arrays.toString(students));//[Student{firstName='John', lastName='Ostin', age=19}, Student{firstName='Jane', lastName='Jack', age=22}, Student{firstName='Jennie', lastName='Jack', age=25}]
 //
+
+
         int[][] matrix = new int[3][3];
         matrix[0][0] = 1;
         matrix[0][1] = 19;

@@ -1,5 +1,7 @@
 package com.softserve.academy.module3;
 
+import java.util.Objects;
+
 public class Student {
     //fields
     private String firstName;
@@ -94,4 +96,17 @@ public class Student {
 //        st5.firstName = "";
 //        st5.printInfo();
 //    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return age == student.age && Objects.equals(firstName, student.firstName) && Objects.equals(lastName, student.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, age);
+    }
 }
