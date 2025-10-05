@@ -6,7 +6,6 @@ import lombok.Setter;
 
 @Setter
 @Getter
-@AllArgsConstructor
 public class Passengers {
     protected int passengers;
 

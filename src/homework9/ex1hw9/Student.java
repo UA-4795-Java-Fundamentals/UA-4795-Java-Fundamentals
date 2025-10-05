@@ -1,0 +1,28 @@
+package ex1hw9;
+
+public class Student extends Person implements Cloneable {
+    private int course;
+
+public Student(String firstName, String lastName, int age, int course) {
+        super(firstName, lastName, age);
+        this.course = course;
+    }
+    @Override
+    public String activity() {
+        return "";
+    }
+
+    public String info(){
+        return super.info() + "\nCourse " + course;
+}
+
+    public void setCourse(int course) {
+        this.course = course;
+    }
+
+    @Override
+    public Object clone()
+            throws CloneNotSupportedException {
+        return super.clone();
+    }
+}

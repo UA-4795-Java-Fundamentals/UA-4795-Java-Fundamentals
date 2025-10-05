@@ -1,6 +1,8 @@
 package person;
 
 public class Person {
+
+
     public static void main(String[] args) {
         DemoPerson person1 = new DemoPerson();
         DemoPerson person2 = new DemoPerson();
