@@ -9,7 +9,7 @@ public class Person implements Cloneable {
         this.name = new FullName(firstName, lastName);
     }
 
-    public class FullName {
+    public class FullName implements Cloneable {
         String firstName;
         String lastName;
 
@@ -39,9 +39,23 @@ public class Person implements Cloneable {
         System.out.println(name.getFormatted() + " (" + name.getInitials() + ") " + age);
     }
 
+//    @Override
+//    public Object clone() throws CloneNotSupportedException {
+//        return super.clone();
+//    }
+
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Person clone() {
+        try {
+            Person copy = (Person) super.clone();
+            if (this.name != null) {
+                copy.name = copy.new FullName(this.name.firstName,
+                        this.name.lastName);
+            }
+            return copy;
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -68,17 +82,12 @@ class DemoPerson {
         person1.printInfo();
         Person copyOfPerson = null;
         System.out.println("Cloned person: ");
-        try {
-            copyOfPerson = (Person) person1.clone();
-            System.out.println(copyOfPerson);
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
+        copyOfPerson = person1.clone();
+        System.out.println(copyOfPerson);
 
         copyOfPerson.setName(copyOfPerson.new FullName("Bob", "Brown"));
         System.out.println(person1);
         System.out.println(copyOfPerson);
-
 
     }
 
