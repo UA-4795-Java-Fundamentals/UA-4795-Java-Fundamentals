@@ -22,7 +22,7 @@ public class StringFormatDemo {
                 """.formatted(name, age, balance, active, today);
 
         System.out.println(report);
-        //🕒 Date: %1$tF %1$tT
+
 
         System.out.printf("|%10s|%n", "Java");  // |      Java|
         System.out.printf("|%-10s|%n", "Java"); // |Java      |
